@@ -1,23 +1,17 @@
 package org.training.walletpayment.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import java.util.List;
 
-@Getter
-@Setter
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ResponseDto {
 
-	private long responseCode;
-	private String message;
-
-	public ResponseDto(long responseCode, String message) {
-		super();
-		this.responseCode = responseCode;
-		this.message = message;
-	}
-
-	public ResponseDto() {
-		super();
-	}
-
+	private long reaponseCode;
+	
+	private List<String> responseMessage;
 }
